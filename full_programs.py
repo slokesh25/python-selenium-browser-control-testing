@@ -68,6 +68,7 @@
 # sleep(3)
 
 # # minmize and maximize the window
+
 # driver=ChromeOptions()
 # driver.add_experimental_option("detach",True)
 
@@ -83,6 +84,7 @@
 # driver.close()
 
 # Based on the user input position of the window
+
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
 # driver=ChromeOptions()
@@ -98,6 +100,7 @@
 
 # sleep(3)
 # driver.close()
+
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
 # drive=ChromeOptions()
@@ -122,7 +125,7 @@
 # drive.fullscreen_window()
 # sleep(3)
 
-# # Back screen one screen to back another screen 
+#  main screen to back screen 
 
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
@@ -136,11 +139,11 @@
 # drive.back()
 # # sleep(3)
 
-# # To launch amazon.in after 3 seconds minimize the window
+# To launch amazon.in after 3 seconds minimize the window
 
-# # and after 3s maximize and after 3s launch flipkart and after
-# # 5s click on back and, after 2s click on forvard and after 2s
-# # refersh the browser and after 3s close the brouser
+# and after 3s maximize and after 3s launch flipkart and after
+# 5s click on back and, after 2s click on forvard and after 2s
+# refersh the browser and after 3s close the brouser
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
 # drive=ChromeOptions()
@@ -173,6 +176,7 @@
 # print("size",size)
 # position=driver.get_window_position()
 # print("position",position)
+
 # size_position= driver.get_window_rect()
 # print("size_position",size_position)
 # driver.close()
@@ -193,6 +197,7 @@
 # driver.close()
 
 # Based on the user input for window size
+
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
 
@@ -211,6 +216,7 @@
 # driver.close()
  
 # Based on the user input for window position size 
+
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
 
@@ -285,7 +291,7 @@
 # search_btn=driver.find_element("id","nav-search-submit-button")
 # search_btn.click()
 
-# method 2 for id selector
+# # method 2 for id selector
 
 # from selenium.webdriver import Chrome,ChromeOptions
 # from time import sleep
@@ -299,8 +305,28 @@
 # sleep(2)
 # driver.find_element("id","nav-search-submit-button").click()
 
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+# sleep(3)
+# driver.find_element("class name","oxd-input.oxd-input--active").send_keys("loki2545")
+# sleep(3)
+# driver.find_element("class name","oxd-input.oxd-input--active").send_keys("lokesh")
+# sleep(3)
+# driver.close()
 
-
-
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://testautomationpractice.blogspot.com/")
+# sleep(3)
+# driver.find_element("class name","form-control").send_keys("lokesh")
+# sleep(3)
+# driver.find_element("class name","form-control").send_keys("lokesh@gmail")
 
 
