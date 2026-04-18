@@ -330,3 +330,179 @@
 # driver.find_element("class name","form-control").send_keys("lokesh@gmail")
 
 
+#find the text locator 
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://www.instagram.com/#")
+# sleep(3)
+# driver.find_element("link text","Forgot password?").click()
+# sleep(3)
+# driver.close()
+
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://www.saucedemo.com/")
+# sleep(3)
+# driver.find_element("id","user-name").send_keys("lokesh")
+# sleep(3)
+# driver.find_element("id","password").send_keys("loki123")
+# sleep(3)
+# This line login button is not click because login name is attribute
+# it's not center of the tag <input>login</input> like this so it's not execute
+# driver.find_element("link text","Login").click()
+# sleep(3)
+
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://www.amazon.in/")
+# sleep(3)
+# driver.maximize_window()
+# driver.find_element("partial link text","Sell").click()
+# sleep(3)
+
+# # css selector
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://testautomationpractice.blogspot.com/")
+# sleep(3)
+# driver.find_element("css selector","input[placeholder='Enter EMail']").send_keys("lokesh@gmail.com")
+# driver.find_element("css selector","input[value=sunday]").click()
+# sleep(3)
+# driver.find_element("css selector","input[value=monday]").click()
+# sleep(3)
+# driver.find_element("css selector","input[value=tuesday]").click()
+# sleep(3)
+# driver.find_element("css selector","input[value=wednesday]").click()
+# sleep(3)
+# driver.find_element("css selector","input[value=thursday]").click()
+# sleep(3)
+
+
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+# driver.get("https://demowebshop.tricentis.com/")
+# driver.maximize_window()
+# sleep(3)
+# driver.find_element("class name","ico-register").click()
+# sleep(3)
+# driver.find_element("css selector","input[value='M']").click()
+# sleep(3)
+# driver.find_element("css selector","input[class='text-box single-line']").send_keys("lokesh")
+# sleep(3)
+# driver.find_element("css selector","input[class='text-box single-line']").send_keys("sathiyam")
+# sleep(3)
+
+# tag name locator
+
+# from selenium.webdriver import Chrome,ChromeOptions
+# from time import sleep
+# opts=ChromeOptions()
+# opts.add_experimental_option("detach",True)
+# driver=Chrome(opts)
+
+# driver.get("https://demowebshop.tricentis.com/")
+# sleep(3)
+
+# driver.maximize_window()
+# sleep(3)
+
+# a=driver.find_elements("tag name","input")
+# #print(a)
+# print("No. of Input Tag:",len(a))
+
+# b=driver.find_elements("tag name","div")
+# #print(b)
+# print("No. of Div Tag:",len(b))
+
+# c=driver.find_elements("tag name","button")
+# #print(c)
+# print("No. of Button Tag: ",len(c))
+
+# d=driver.find_elements("tag name","img")
+# #print(d)
+# print("No. of Image Tag :",len(d))
+
+# e=driver.find_elements("tag name","p")
+# #print(e)
+# print("No. of Para Tag :",len(e))
+
+# f=driver.find_elements("tag name","section")
+# #print(f)
+# print("No. of Section Tag :",len(f))
+
+# g=driver.find_elements("tag name","header")
+# #print(g)
+# print("No. of Header Tag :",len(g))
+
+# h=driver.find_elements("tag name","footer")
+# #print(h)
+# print("No. of Footer Tag :",len(h))
+
+# i=driver.find_elements("tag name","span")
+# #print(i)
+# print("No. of Span Tag :",len(i))
+
+# j=driver.find_elements("tag name","a")
+# #print(j)
+# print("No. of Anchor Tag :",len(j))
+
+# k=driver.find_elements("tag name","label")
+# #print(k)
+# print("No. of Label Tag :",len(k))
+
+# driver.close()
+
+# xpath absolute
+
+from selenium.webdriver import Chrome,ChromeOptions
+from time import sleep
+
+opts=ChromeOptions()
+opts.add_experimental_option("detach",True)
+
+driver=Chrome(opts)
+driver.get("https://demowebshop.tricentis.com/")
+
+driver.maximize_window()
+sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a").click()
+sleep(3)
+
+# sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]/div[2]/div[2]/input").send_keys("lokesh")
+sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]/div[2]/div[3]/input").send_keys("sathiyam")
+sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]/div[2]/div[4]/input").send_keys("risha@gmail.com")
+sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[3]/div[2]/div[1]/input").send_keys("loki123")
+sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[3]/div[2]/div[2]/input").send_keys("loki123")
+sleep(3)
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[4]/input").click()
+sleep(3) 
+
+driver.find_element("xpath","/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]/div[2]/div[1]/div[1]/input").click()
+sleep(3)
